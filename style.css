@@ -1,0 +1,169 @@
+:root {
+  --black: #0b0b0b;
+  --yellow: #ffd400;
+  --white: #ffffff;
+  --gray: #b5b5b5;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--black);
+  color: var(--yellow);
+  line-height: 1.6;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* LINKS */
+a {
+  color: var(--yellow);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* HEADER */
+.site-header {
+  border-bottom: 1px solid #222;
+  padding: 22px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--yellow);
+}
+
+nav a {
+  margin-left: 24px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+
+/* HERO */
+.hero {
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 50px;
+  line-height: 1.05;
+  margin-bottom: 24px;
+  color: var(--yellow);
+}
+
+.highlight {
+  background: var(--white);
+  color: var(--black);
+  padding: 0 8px;
+}
+
+.hero-sub {
+  font-size: 18px;
+  color: var(--gray);
+  max-width: 600px;
+  margin-bottom: 36px;
+}
+
+/* CTA */
+.cta {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  border-bottom: 4px solid var(--yellow);
+  padding-bottom: 4px;
+}
+
+/* ARTICLES */
+.articles {
+  padding: 80px 0;
+}
+
+/* WHITE = RARE & IMPORTANT */
+.post {
+  background: var(--white);
+  color: var(--black);
+  padding: 42px;
+  margin-bottom: 60px;
+}
+
+.post h2 {
+  font-size: 30px;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.post p {
+  color: #333;
+  max-width: 640px;
+  margin-bottom: 14px;
+}
+
+/* NEWSLETTER — POWER SECTION */
+.newsletter {
+  background: var(--yellow);
+  color: var(--black);
+  padding: 90px 0;
+  margin-top: 80px;
+}
+
+.newsletter h3 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 12px;
+}
+
+.newsletter p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+.newsletter form {
+  display: flex;
+  max-width: 420px;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 14px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.newsletter button {
+  background: var(--black);
+  color: var(--yellow);
+  border: none;
+  padding: 14px 24px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.site-footer {
+  padding: 40px 0;
+  font-size: 14px;
+  color: #777;
+}
